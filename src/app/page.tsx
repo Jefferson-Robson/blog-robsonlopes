@@ -39,7 +39,7 @@ export default function Home() {
                 invisível que transforma uma pergunta em produto.
               </p>
               <span className="note-rule" />
-              <span className="note-caption">Desde 2026 · Minas Gerais</span>
+              <span className="note-caption">Desde 2026 · Guaratuba</span>
             </div>
           </div>
         </section>
