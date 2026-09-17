@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://blog.robsonlopes.tec.br"),
-  title: "Blog Robson Lopes | Tecnologia e prática",
+  title: "Blog Robson Lopes | Tecnologia, processos e automação",
   description:
-    "Artigos sobre tecnologia, automação e os aprendizados por trás de projetos reais.",
+    "Projetos, experimentos e aprendizados sobre tecnologia, processos, automação e IA aplicada.",
   alternates: {
     canonical: "/",
     types: {
@@ -30,13 +30,13 @@ export const metadata: Metadata = {
     siteName: "Blog Robson Lopes",
     title: "Blog Robson Lopes | Tecnologia e prática",
     description:
-      "Artigos sobre tecnologia, automação e os aprendizados por trás de projetos reais.",
+      "Projetos, experimentos e aprendizados sobre tecnologia, processos, automação e IA aplicada.",
   },
   twitter: {
     card: "summary",
     title: "Blog Robson Lopes | Tecnologia e prática",
     description:
-      "Artigos sobre tecnologia, automação e os aprendizados por trás de projetos reais.",
+      "Projetos, experimentos e aprendizados sobre tecnologia, processos, automação e IA aplicada.",
   },
 };
 
