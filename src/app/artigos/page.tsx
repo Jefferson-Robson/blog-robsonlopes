@@ -3,6 +3,7 @@ import Link from "next/link";
 import { articles } from "@/content/articles";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/artigos" },
   title: "Artigos | Blog Robson Lopes",
   description: "Artigos sobre tecnologia, processos e projetos reais.",
 };

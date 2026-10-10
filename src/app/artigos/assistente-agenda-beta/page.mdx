@@ -1,0 +1,43 @@
+export const metadata = {"title": "Assistente de agenda: do problema real à preparação do beta", "description": "O escopo do projeto, a integração com Google Calendar e os cuidados antes de testar com outras pessoas.", "alternates": {"canonical": "/artigos/assistente-agenda-beta"}};
+
+export const dynamic = "force-static";
+
+<div className="post-page">
+<header className="post-header">
+<p className="eyebrow">Software e automação · 10 de outubro de 2026 · Publicado</p>
+<h1>Assistente de agenda: do problema real à preparação do beta</h1>
+<p className="post-lede">O escopo do projeto, a integração com Google Calendar e os cuidados antes de testar com outras pessoas.</p>
+</header>
+<div className="post-content">
+
+## O problema que quero resolver
+
+Consultar disponibilidade e organizar agendamentos por mensagens é o ponto de partida do meu assistente de agenda. A proposta é integrar Google Calendar a aplicativos de mensagens, começar com uso interno e aprender antes de ampliar o projeto.
+
+## Construir por etapas
+
+A base do projeto usa Python e FastAPI. O desenvolvimento está organizado com código, documentação e testes, em um repositório que mantenho privado durante essa fase.
+
+Telegram e WhatsApp fazem parte da proposta do MVP. Isso não significa que todas as integrações estejam prontas: a etapa discutida mais recentemente é a preparação de um beta individual no Telegram.
+
+## O que está definido para o beta
+
+O bot do beta foi criado e o endereço para o fluxo de autorização do Google foi confirmado. O teste inicial foi planejado para um grupo pequeno de participantes que aceitaram participar.
+
+A configuração e a validação completa do fluxo ainda precisam ser confirmadas antes de eu tratar esse beta como disponível. Prefiro registrar esse limite claramente a apresentar uma decisão de configuração como uma entrega concluída.
+
+## Cuidados que fazem parte do projeto
+
+- Manter tokens e segredos fora do código e do histórico do Git.
+- Separar as credenciais do beta das utilizadas em outros testes.
+- Restringir o acesso aos participantes autorizados.
+- Validar consulta e agendamento de ponta a ponta antes de ampliar o uso.
+
+## O aprendizado que quero levar para os próximos projetos
+
+Automatizar uma agenda envolve entender disponibilidade, autorização e o caminho completo entre mensagem e calendário. Fazer a interface responder é apenas uma parte do trabalho.
+
+Meu próximo marco é validar esse fluxo no beta e documentar o comportamento observado, os limites e os ajustes necessários. Este artigo registra a preparação, sem anunciar um serviço já lançado.
+
+</div>
+</div>

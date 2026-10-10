@@ -23,10 +23,10 @@ export default function Home() {
           <p className="eyebrow">Tecnologia aplicada · processos · automação</p>
           <div className="hero-grid">
             <div>
-              <h1 id="hero-title">Ideias, processos e tecnologia em construção.</h1>
+              <h1 id="hero-title">Tecnologia para negócios funcionarem melhor.</h1>
               <p className="hero-copy">
-                Projetos, experimentos e aprendizados sobre software, IA, automação e
-                processos — sempre partindo de problemas reais.
+                Minha jornada em software, IA, automação e processos: projetos reais,
+                decisões técnicas e aprendizados que compartilho enquanto construo.
               </p>
               <a className="primary-link" href="#artigos">
                 Explorar artigos <span aria-hidden="true">↓</span>
@@ -78,11 +78,24 @@ export default function Home() {
             <h2 id="about-title">Tecnologia se constrói em público.</h2>
           </div>
           <p>
-            Este é um espaço para documentar a construção de soluções digitais: entender
-            um problema, organizar o processo, testar uma ferramenta e aprender
-            com o resultado. Menos respostas prontas, mais clareza sobre como as
-            coisas são construídas.
+            Sou Robson Lopes, estudante de Engenharia de Software. Estou conectando
+            minha experiência com processos à construção de soluções digitais. Aqui
+            documento o assistente de agenda, minha jornada dos 5 km com IA e dados
+            e o que aprendo ao desenvolver com inteligência artificial.
           </p>
+        </section>
+        <section className="articles-section" aria-labelledby="journey-title">
+          <div className="section-heading">
+            <p className="eyebrow">Minha jornada · outubro de 2026</p>
+            <h2 id="journey-title">O que estou construindo agora.</h2>
+          </div>
+          <div className="post-content">
+            <p><strong>Assistente de agenda:</strong> desenvolvimento de uma integração com Google Calendar e mensagens, com preparação de um beta individual no Telegram.</p>
+            <p><strong>Dos primeiros treinos aos 5 km:</strong> uso de GPT, Amazfit Bip U, Zepp e Strava para registrar e entender minha evolução até 26 de março de 2027.</p>
+            <p><strong>Processos e software:</strong> documentação de rotinas, estudo de POO e uso de IA com revisão e entendimento do código.</p>
+            <p><strong>Robson Crypto Lab:</strong> um laboratório educacional de Bitcoin, cripto e tecnologia. Testando estratégias, analisando dados e entendendo o mercado, sem promessas de lucro.</p>
+            <p><a href="https://www.youtube.com/@RobsonCryptoLab">Acompanhar o Robson Crypto Lab ↗</a> · <a href="https://robsonlopes.tec.br/">Conhecer meus projetos ↗</a></p>
+          </div>
         </section>
       </main>
 
