@@ -101,6 +101,7 @@ export default function Home() {
 
       <footer className="site-footer">
         <span>Robson Lopes · tecnologia, processos e automação</span>
+        <a href="mailto:suporte@robsonlopes.tec.br">suporte@robsonlopes.tec.br</a>
         <span>© 2026</span>
       </footer>
     </div>
