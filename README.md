@@ -16,6 +16,13 @@ Compartilhar conteúdos que conectam desenvolvimento de software e tecnologia a 
 - Organização e melhoria de processos
 - Bastidores, aprendizados e estudos de caso
 
+## Projetos documentados
+
+- Assistente de agenda: preparação do beta individual no Telegram.
+- Jornada dos 5 km: uso de IA, smartwatch e registros de treino.
+- Organização e documentação de processos.
+- Robson Crypto Lab: laboratório educacional em desenvolvimento, apresentado na página inicial.
+
 ## Tecnologias
 
 - Next.js 16
