@@ -1,0 +1,63 @@
+export const metadata = {
+  title: "Benchmark de LLMs gratuitas: OpenCode 2, Python e 30 testes",
+  description: "Meu experimento com DeepSeek, GLM e Nemotron no OpenCode: análise de arquitetura, implementação em Python e resultados verificáveis.",
+  alternates: { canonical: "/artigos/benchmark-llms-python/" },
+};
+export const dynamic = "force-static";
+
+<div className="post-page">
+  <header className="post-header">
+    <p className="eyebrow">IA e desenvolvimento · 31 de outubro de 2026 · Experimento</p>
+    <h1>Três LLMs gratuitas, o mesmo desafio e uma surpresa nos testes</h1>
+    <p className="post-lede">Em vez de escolher meu modelo de programação favorito pelo marketing ou pela primeira resposta convincente, decidi comparar resultados usando o OpenCode 2 e um pequeno desafio Python.</p>
+  </header>
+  <div className="post-content">
+    ## Comecei com uma atualização do OpenCode
+
+    Atualizei meu OpenCode da versão 1.19.5 para a 2.2.5 no Pop!_OS. A interface do terminal não pareceu tão diferente, mas a experiência Web facilitou explorar projetos e alternar entre modelos disponíveis como gratuitos. Escolhi GLM-5.3-Flash, DeepSeek V4.1 Flash e Nemotron 3.5 Lightning.
+
+    O rótulo Free não significa necessariamente uso ilimitado; limites e disponibilidade dependem do provedor.
+
+    ## Benchmark 1: entender a arquitetura de um projeto
+
+    Abri sessões independentes e entreguei o mesmo pedido: analisar o repositório do Assistente do Robson sem modificar arquivos. O repositório guarda essencialmente documentação; a automação real vive no Make. Assim, as avaliações foram sobre a arquitetura **documentada**, não uma verificação da configuração real.
+
+    Fiz uma avaliação qualitativa da compreensão, precisão, didática, recomendações e objetividade. As notas exploratórias foram DeepSeek 8,9/10, GLM 8,5/10 e Nemotron 6,6/10. Essas notas representam minha interpretação de uma única resposta por modelo, sem avaliadores independentes ou várias rodadas.
+
+    O modelo que parecia explicar melhor não precisava ser o que programaria melhor. Por isso, veio o segundo teste.
+
+    ## Benchmark 2: construir o mesmo validador em Python
+
+    Preparei três pastas equivalentes, com o mesmo contrato e testes públicos. A função deveria receber uma mensagem /pedido e um chat_id, validar tipos, limites e estrutura, normalizar nome, e-mail e descrição e gerar um protocolo determinístico em SHA-256.
+
+    Cada modelo trabalhou apenas em sua pasta, com o mesmo prompt e sem acesso aos testes adicionais. O avaliador executou dez testes públicos e vinte adicionais, com uma pontuação máxima de 100. Também verificou a integridade dos arquivos esperados.
+
+    ## Resultados
+
+    | Modelo | Testes públicos | Adicionais | Pontuação |
+    | --- | --- | --- | --- |
+    | DeepSeek V4.1 Flash | 10/10 | 20/20 | **100/100** |
+    | Nemotron 3.5 Lightning | 10/10 | 20/20 | **100/100** |
+    | GLM-5.3-Flash | 10/10 | 19/20 | **96/100** |
+
+    O DeepSeek organizou a validação de e-mail em função auxiliar e usou expressões regulares. O Nemotron passou em todos os casos com uma implementação mais extensa e concentrada em uma única função. O GLM separou a lógica em funções pequenas, mas permitiu um domínio de e-mail com hífen no início de um rótulo, caso que deveria ser rejeitado pelo contrato.
+
+    O CSV inicial indicou o empate entre DeepSeek e Nemotron. Durante a revisão, percebi que um arquivo enviado como Nemotron era, na verdade, idêntico ao do GLM. Enviei novamente o arquivo correto antes de fechar a análise. Essa troca me ensinou que **rastreabilidade importa tanto quanto pontuação**.
+
+    ## O que o resultado permite — e não permite — concluir
+
+    Neste desafio específico, DeepSeek e Nemotron atenderam a todos os casos avaliados. O GLM perdeu um caso extremo. Isso **não prova** que qualquer um seja superior em todo tipo de tarefa, que todo código esteja livre de erros ou que o ranking se repetiria em outra sessão.
+
+    Também são duas formas diferentes de avaliação: notas qualitativas no primeiro benchmark e testes automatizados no segundo. Não faz sentido somá-las como se medissem a mesma coisa.
+
+    Para um experimento mais rigoroso, eu repetiria cada tarefa várias vezes, mediria tempo e consumo de tokens quando disponíveis, ampliaria casos de teste, revisaria segurança e qualidade do código e registraria a versão exata de cada modelo.
+
+    ## Como quero trabalhar com IA daqui para frente
+
+    Quero continuar usando LLMs como ferramentas de engenharia, sem confundir código gerado com código compreendido. Um bom fluxo envolve definir requisitos, pedir a implementação, executar testes, revisar mudanças e aprender com as falhas.
+
+    Essa experiência já influenciou meu modo de pensar os projetos: antes de perguntar se uma IA sabe programar, prefiro perguntar **como posso verificar que ela resolveu o problema que pedi?**
+
+    O [estudo de caso no meu portfólio](https://robsonlopes.tec.br/projetos/laboratorio-llms/) apresenta o laboratório, e o [Assistente do Robson](https://robsonlopes.tec.br/projetos/assistente-do-robson/) foi a referência real usada no primeiro teste de arquitetura. Os materiais de benchmark estão sendo organizados para publicação reproduzível, sem segredos de outros projetos.
+  </div>
+</div>
