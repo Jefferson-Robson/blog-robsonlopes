@@ -81,7 +81,7 @@ export default function Home() {
             Sou Robson Lopes, estudante de Engenharia de Software. Estou conectando
             minha experiência com processos à construção de soluções digitais. Aqui
             documento o assistente de agenda, minha jornada dos 5 km com IA e dados
-            e o que aprendo ao desenvolver com inteligência artificial.
+            e experimentos de programação com LLMs, testes e revisão crítica de código.
           </p>
         </section>
         <section className="articles-section" aria-labelledby="journey-title">
@@ -90,6 +90,8 @@ export default function Home() {
             <h2 id="journey-title">O que estou construindo agora.</h2>
           </div>
           <div className="post-content">
+            <p><strong>Assistente do Robson:</strong> testes de um bot de atendimento com Telegram e Make, usando menus, roteamento de mensagens e retorno humano. <Link href="/artigos/assistente-robson-make">Ler relato ↗</Link></p>
+            <p><strong>Laboratório de LLMs:</strong> comparação de GLM, DeepSeek e Nemotron no OpenCode 2, incluindo um desafio Python com 30 testes. <Link href="/artigos/benchmark-llms-python">Ver resultados ↗</Link></p>
             <p><strong>Assistente de agenda:</strong> desenvolvimento de uma integração com Google Calendar e mensagens, com preparação de um beta individual no Telegram.</p>
             <p><strong>Dos primeiros treinos aos 5 km:</strong> uso de GPT, Amazfit Bip U, Zepp e Strava para registrar e entender minha evolução até 26 de março de 2027.</p>
             <p><strong>Processos e software:</strong> documentação de rotinas, estudo de POO e uso de IA com revisão e entendimento do código.</p>

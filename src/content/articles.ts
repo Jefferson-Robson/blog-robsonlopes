@@ -9,6 +9,25 @@ export type Article = {
 };
 
 export const articles: Article[] = [
+  {
+    slug: "benchmark-llms-python",
+    number: "06",
+    category: "IA e desenvolvimento",
+    status: "Publicado",
+    publishedAt: "2026-10-31",
+    title: "Três LLMs gratuitas, o mesmo desafio e uma surpresa nos testes",
+    description: "OpenCode 2, análise de arquitetura, Python e 30 testes: o que aprendi comparando DeepSeek, GLM e Nemotron.",
+  },
+  {
+    slug: "assistente-robson-make",
+    number: "05",
+    category: "Automação e projetos",
+    status: "Publicado",
+    publishedAt: "2026-10-31",
+    title: "Assistente do Robson: um bot útil antes de colocar IA em tudo",
+    description: "Diário de construção de um atendimento pelo Telegram e Make, com menus, callbacks, limites e retorno humano.",
+  },
+
 {
   "slug": "corrida-ia-dados",
   "number": "04",

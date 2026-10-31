@@ -1,0 +1,53 @@
+export const metadata = {
+  title: "Assistente do Robson: meu primeiro fluxo de atendimento com Telegram e Make",
+  description: "Como comecei a construir um bot de atendimento com menus, webhooks, filtros e retorno humano, sem precisar manter um servidor ligado.",
+  alternates: { canonical: "/artigos/assistente-robson-make/" },
+};
+export const dynamic = "force-static";
+
+<div className="post-page">
+  <header className="post-header">
+    <p className="eyebrow">Automação · 31 de outubro de 2026 · Diário de projeto</p>
+    <h1>Assistente do Robson: um bot útil antes de colocar IA em tudo</h1>
+    <p className="post-lede">Aprendendo automação com Telegram e Make: comecei com um menu, enfrentei os detalhes dos botões e cheguei a uma pergunta melhor — como transformar mensagens em um atendimento de verdade?</p>
+  </header>
+  <div className="post-content">
+    ## Por que comecei por aqui
+
+    Queria aprender automações que resolvessem problemas reais. Escolhi um fluxo pequeno: o visitante abre um bot no Telegram, conhece meus projetos, demonstra interesse em automação e encontra uma maneira de falar comigo. A princípio, não preciso de um modelo de linguagem decidindo todas as respostas. Preciso de um processo claro.
+
+    O Make funciona na nuvem e recebe atualizações do Telegram por webhook. Isso me permite experimentar sem depender de manter meu computador ligado ou configurar uma VPS.
+
+    ## O primeiro aprendizado foi a interface
+
+    Montei o recebimento de mensagens, os botões e as respostas. Nem tudo funcionou de primeira: precisei entender a diferença entre botões que enviam mensagens e botões com callback, mapear o identificador correto da conversa e configurar filtros para cada caminho. Em alguns testes, os botões estavam pouco visíveis; em outros, o clique não gerava a resposta esperada.
+
+    Depois de ajustar o fluxo, os testes interativos começaram a funcionar. Isso não significa que todo o atendimento esteja pronto. Uma coisa é responder ao menu. Outra é encaminhar corretamente uma solicitação e garantir que eu consiga dar continuidade ao contato.
+
+    ## O caminho planejado de uma solicitação
+
+    1. A pessoa inicia a conversa no Telegram e escolhe uma opção.
+    2. O Make identifica o comando ou a escolha e envia o conteúdo correspondente.
+    3. Para pedir contato, o visitante informa necessidade e forma de retorno.
+    4. O cenário deve encaminhar a solicitação para uma conversa privada minha.
+    5. Eu faço o retorno manual pelo contato informado.
+
+    Esse último ponto é fundamental: **o bot não é um atendente humano nem um sistema de IA autônomo**. Na primeira versão, a automação organiza o começo da conversa e o atendimento continua comigo.
+
+    ## Por que documentar um sistema no-code?
+
+    O cenário executável fica dentro do Make, mas isso não elimina a necessidade de engenharia. Criei um repositório privado para registrar decisões, filtros, critérios de pronto, riscos e orientações de segurança.
+
+    Também usei três LLMs gratuitas para analisar a arquitetura documentada. As respostas levantaram pontos importantes: falhas silenciosas, créditos do plano gratuito, ausência de backup de configuração, validação dos dados e necessidade de testes com mais de um usuário. É essencial lembrar que esses diagnósticos vieram da documentação, não de uma auditoria direta do cenário em produção.
+
+    ## Próximas validações
+
+    Antes de divulgar o bot como um canal estável, quero confirmar o fluxo completo de notificação, testar falhas, impedir confirmações falsas, verificar o consumo de créditos e separar credenciais e dados reais do material publicado. IA para respostas mais elaboradas pode entrar depois, com informações aprovadas e limites claros.
+
+    ## O que esse projeto está me ensinando
+
+    Automatizar não é apenas conectar dois módulos. É entender o evento inicial, as decisões em cada etapa, o que acontece quando algo dá errado e quem assume o processo quando a automação termina.
+
+    O [estudo de caso do Assistente do Robson](https://robsonlopes.tec.br/projetos/assistente-do-robson/) reúne a visão do projeto. E o [laboratório de LLMs](https://robsonlopes.tec.br/projetos/laboratorio-llms/) mostra como estou testando as ferramentas de IA enquanto aprendo engenharia de software.
+  </div>
+</div>
