@@ -10,6 +10,15 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: "por-que-pausei-meu-assistente",
+    number: "07",
+    category: "Diário de projeto",
+    status: "Publicado",
+    publishedAt: "2026-11-19",
+    title: "Por que pausei meu assistente pessoal",
+    description: "O que aprendi montando um bot no Telegram e como uma experiência no Facebook mudou minha decisão sobre o projeto.",
+  },
+  {
     slug: "benchmark-llms-python",
     number: "06",
     category: "IA e desenvolvimento",

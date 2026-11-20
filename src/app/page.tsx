@@ -78,19 +78,18 @@ export default function Home() {
             <h2 id="about-title">Tecnologia se constrói em público.</h2>
           </div>
           <p>
-            Sou Robson Lopes, estudante de Engenharia de Software. Estou conectando
-            minha experiência com processos à construção de soluções digitais. Aqui
-            documento o assistente de agenda, minha jornada dos 5 km com IA e dados
-            e experimentos de programação com LLMs, testes e revisão crítica de código.
+            Troquei Ciências Contábeis por Engenharia de Software porque sempre gostei mais do mundo digital.
+            Minha experiência com contabilidade, operações e logística é o ponto de partida.
+            Aqui compartilho o que aprendo ao conhecer outras profissões e testar ideias para resolver problemas nas empresas.
           </p>
         </section>
         <section className="articles-section" aria-labelledby="journey-title">
           <div className="section-heading">
-            <p className="eyebrow">Minha jornada · outubro de 2026</p>
-            <h2 id="journey-title">O que estou construindo agora.</h2>
+            <p className="eyebrow">Minha jornada · novembro de 2026</p>
+            <h2 id="journey-title">Projetos e decisões recentes.</h2>
           </div>
           <div className="post-content">
-            <p><strong>Assistente do Robson:</strong> testes de um bot de atendimento com Telegram e Make, usando menus, roteamento de mensagens e retorno humano. <Link href="/artigos/assistente-robson-make">Ler relato ↗</Link></p>
+            <p><strong>Assistente do Robson:</strong> desenvolvimento pausado após os testes com Telegram e Make. <Link href="/artigos/por-que-pausei-meu-assistente">Por que decidi pausar ↗</Link></p>
             <p><strong>Laboratório de LLMs:</strong> comparação de GLM, DeepSeek e Nemotron no OpenCode 2, incluindo um desafio Python com 30 testes. <Link href="/artigos/benchmark-llms-python">Ver resultados ↗</Link></p>
             <p><strong>Assistente de agenda:</strong> desenvolvimento de uma integração com Google Calendar e mensagens, com preparação de um beta individual no Telegram.</p>
             <p><strong>Dos primeiros treinos aos 5 km:</strong> uso de GPT, Amazfit Bip U, Zepp e Strava para registrar e entender minha evolução até 26 de março de 2027.</p>
