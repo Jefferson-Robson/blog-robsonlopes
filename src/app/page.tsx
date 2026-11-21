@@ -89,10 +89,11 @@ export default function Home() {
             <h2 id="journey-title">Projetos e decisões recentes.</h2>
           </div>
           <div className="post-content">
+            <p><strong>Treino em Card:</strong> minha rotina de corrida virou uma ferramenta web para criar cards de corrida e caminhada para os Stories, com dados e foto personalizados. A primeira versão está em validação, com melhorias na entrada do tempo e na orientação para salvar no iPhone. <a href="https://robsonlopes.tec.br/treino/">Criar um card de treino ↗</a></p>
             <p><strong>Assistente do Robson:</strong> desenvolvimento pausado após os testes com Telegram e Make. <Link href="/artigos/por-que-pausei-meu-assistente">Por que decidi pausar ↗</Link></p>
             <p><strong>Laboratório de LLMs:</strong> comparação de GLM, DeepSeek e Nemotron no OpenCode 2, incluindo um desafio Python com 30 testes. <Link href="/artigos/benchmark-llms-python">Ver resultados ↗</Link></p>
             <p><strong>Assistente de agenda:</strong> desenvolvimento de uma integração com Google Calendar e mensagens, com preparação de um beta individual no Telegram.</p>
-            <p><strong>Dos primeiros treinos aos 5 km:</strong> uso de GPT, Amazfit Bip U, Zepp e Strava para registrar e entender minha evolução até 26 de março de 2027.</p>
+            <p><strong>Dos primeiros treinos aos 5 km:</strong> já completei minha primeira prova de 5 km e sigo registrando treinos com GPT, Amazfit Bip U, Zepp e Strava para a próxima prova, em 26 de março de 2027.</p>
             <p><strong>Processos e software:</strong> documentação de rotinas, estudo de POO e uso de IA com revisão e entendimento do código.</p>
             <p><strong>Robson Crypto Lab:</strong> um laboratório educacional de Bitcoin, cripto e tecnologia. Testando estratégias, analisando dados e entendendo o mercado, sem promessas de lucro.</p>
             <p><a href="https://www.youtube.com/@RobsonCryptoLab">Acompanhar o Robson Crypto Lab ↗</a> · <a href="https://robsonlopes.tec.br/">Conhecer meus projetos ↗</a></p>
